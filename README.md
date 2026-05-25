@@ -26,7 +26,7 @@ Host (Arch/Ubuntu)                    Container Docker
 ## Instalação rápida
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<org>/client-checkpoint-vpn/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/apteles/drk-client-checkpoint-vpn/refs/heads/main/install.sh | bash
 ```
 
 Com parâmetros:
@@ -34,7 +34,14 @@ Com parâmetros:
 ```bash
 VPN_SERVER=mpsec.mpgo.mp.br \
 VPN_LOGIN_TYPE=vpn_VPN_STI \
-curl -fsSL https://raw.githubusercontent.com/<org>/client-checkpoint-vpn/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/apteles/drk-client-checkpoint-vpn/refs/heads/main/install.sh | bash
+```
+
+Se o repositório for outro, defina `REPO_URL` antes do `curl`:
+
+```bash
+REPO_URL=https://github.com/apteles/drk-client-checkpoint-vpn.git \
+curl -fsSL https://raw.githubusercontent.com/apteles/drk-client-checkpoint-vpn/refs/heads/main/install.sh | bash
 ```
 
 O script clona o repositório em `~/.local/share/client-checkpoint-vpn`, instala pré-requisitos e imprime os próximos passos.

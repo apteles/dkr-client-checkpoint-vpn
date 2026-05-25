@@ -2,15 +2,15 @@
 # Instala client-checkpoint-vpn e imprime próximos passos.
 #
 # Uso remoto:
-#   curl -fsSL https://raw.githubusercontent.com/<org>/client-checkpoint-vpn/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/apteles/drk-client-checkpoint-vpn/refs/heads/main/install.sh | bash
 #
 # Com overrides:
 #   VPN_SERVER=mpsec.mpgo.mp.br VPN_LOGIN_TYPE=vpn_VPN_STI \
-#   curl -fsSL https://raw.githubusercontent.com/<org>/client-checkpoint-vpn/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/apteles/drk-client-checkpoint-vpn/refs/heads/main/install.sh | bash
 
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/mpgo/client-checkpoint-vpn.git}"
+REPO_URL="${REPO_URL:-https://github.com/apteles/drk-client-checkpoint-vpn.git}"
 REPO_BRANCH="${REPO_BRANCH:-main}"
 INSTALL_DIR="${INSTALL_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/client-checkpoint-vpn}"
 
